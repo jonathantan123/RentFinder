@@ -1,22 +1,171 @@
-.App {
-  text-align: center;
+/* .card-container {
+  grid-template-columns: 60px 60px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content: space-evenly;
+  align-items: center;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.listing_card {
+ height: 25;
+ width: 25%;
+ align-items: center;
+
+}
+
+.listing_card>img {
+  height:50%;
+  width: 50%;
+ }
+
+ .search_container{
+   display: flex;
+   position: relative;
+
+  background-image: url("https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+  height:75%;
+  width: 75%; */
+ 
+
+
+ /* } */
+/* 
+ .listing_container {
+
+
+ } */
+
+
+
+
+ .main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-top: 3%;
+}
+
+
+
+/* <iframe frameborder="0" className="video-background"src="https://player.vimeo.com/video/121450839?byline=0&portrait=0&autoplay=1&title=0&background=1" ></iframe> */
+.search_container {
+  width: 85%;
+  height: 500px;
+  /* background-image: url("https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"); */
+  display:flex; 
+  justify-content: center;
+  align-items: center; 
+ }
+
+ .welcome-text {
+  width: 50%;
+  height: 15%;
+  position: absolute;
+  align-items: center; 
+  justify-content: center;
   display: flex;
   flex-direction: column;
+  align-content: center;
+ }
+
+
+ .listing-container {
+  width: 65%;
+  display:flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  padding-top: 5%;
+ }
+
+ .card_image {
+   width: 100%;
+   height: 75%;
+ }
+
+ .card_image> img {
+  width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #09d3ac;
+ .listing_card>img {
+  padding-top: 10px;
+  height:50%;
+  width: 50%;
+  display: inline-block;
+ }
+
+
+
+ 
+ 
+ .welcome-text> h1 {
+   color: white;
+ }
+
+ .portfolio-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 5%;
+
+ }
+ .signup-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  padding-top: -100px;
+  background-image: url("https://images.unsplash.com/photo-1492666673288-3c4b4576ad9a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+ }
+
+
+
+ .main {
+
+  flex-direction: row;
+ }
+
+ .one {
+  width: 125%;
+  height: 125%;
 }
+
+
+.two {
+  width: 125%;
+  height: 100%;
+}
+
+
+.video-background { 
+  width: 100%; 
+  height: 100%; 
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.form-div {
+  opacity: 0.7`;
+}
+
+
+
+ 
+
+
+
+
+ 
+

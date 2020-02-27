@@ -1,26 +1,39 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import Navbar from "./components/Navbar"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import MainContainer from './containers/MainContainer';
+import {withRouter} from 'react-router-dom'
+
+class App extends React.Component {
+
+  state = {
+    user_id: 1
+  }
+
+  //pass state to main container for conditional rendering routes
+
+
+  setUserId= (id) => {
+    this.setState({
+      user_id: id 
+    }, ()=> {
+      this.props.history.push("/")
+    })
+  }
+
+  
+
+  render () {
+    return (
+      <React.Fragment>
+          <Navbar user_id={this.state.user_id} setUserId={this.setUserId} routerprops={this.props.history}/>
+          <MainContainer user_id={this.state.user_id} setUserId={this.setUserId}/>
+      </React.Fragment>
+    );
+    
+  } 
 }
 
-export default App;
+export default withRouter (App) ;
